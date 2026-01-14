@@ -11,7 +11,11 @@ print(" Let's try to complete full sentences.")
 words = [" chair", "phone", " enough ", " rough", " five"]
 
 # list of sentences for random
-sentences = [" The cat sat in the ___.", " I have ___ cookies to share with my friends.", " I have ___ fingers on one hand", " I need a ___ to make a call."]
+sentences = [" The cat sat in the ___.",
+ " I have ___ cookies to share with my friends.",
+   " I have ___ fingers on one hand", 
+   " I need a ___ to make a call.",
+   " "]
 
 # use dictionary 
 sentence_word = {
@@ -27,9 +31,13 @@ def start_game():
     while True:
         sentence = random.choice(sentences)
         correct_word = sentence_word[sentence]
-        print("Here is the sentence:")
-        print("Word list", words)
-        user = input("Fill the blank: ")
+
+        print("\nHere is the sentence:")
+        print(sentence)
+        print("Word list:", words)
+
+        user = input("Fill the blank: ").strip().lower()
+
         if user == correct_word:
             print("Yes! You got it!!")
         else:
