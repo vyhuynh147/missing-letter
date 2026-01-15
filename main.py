@@ -1,5 +1,6 @@
 import os
 import random
+import time 
 os.system('cls||clear')
 
 
@@ -21,7 +22,7 @@ sentences = ["The cat sat in the _____.",
              "I saw a ____ fly across the sky.",
              "Let's go for a walk in the ____.",
              "The ____ on the tree as bright red.",
-             "The girl had ______ in the morning."
+             "When she woke up, she did her morning ______."
 ]
 
 # use dictionary 
@@ -54,14 +55,16 @@ def start_game():
 
         if user == correct_word:
             print("Yes! You got it!!")
+            time.sleep(2.5)
+            os.system('cls||clear')
         else:
             print(" You wrong:( ")
             print ("The correct answer was:", correct_word)
-
-   #         print(" The correct answer was", words)
+            time.sleep(2.5)
+            os.system('cls||clear')
 
 # ask the user want another sentences or not
-        more = input (" Do you want another sentences? (yes/no)").lower().strip()
+        more = input (" Do you want another sentences? (yes/no): ").lower().strip()
         if more != "yes":
             print(" Thank you for playing.")
             break 
