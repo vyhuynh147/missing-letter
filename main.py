@@ -31,7 +31,7 @@ sentence_word = {
     sentences[1]: "phone",
     sentences[2]: "enough",
     sentences[3]: "rough",
-    sentences[4]: "five ",
+    sentences[4]: "five",
     sentences[5]: "very",
     sentences[6]: "hair",
     sentences[7]: "kite",
@@ -68,6 +68,9 @@ def start_game():
         if more != "yes":
             print(" Thank you for playing.")
             break 
+        else:
+            time.sleep(1.0)
+            os.system('cls||clear')
 start_game()
 
 
