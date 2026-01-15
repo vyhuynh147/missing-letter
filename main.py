@@ -20,7 +20,7 @@ sentences = ["The cat sat in the _____.",
              "Can you tie your ____?",
              "I saw a ____ fly across the sky.",
              "Let's go for a walk in the ____.",
-             "The ____ on the tree as bright red",
+             "The ____ on the tree as bright red.",
              "The girl had ______ in the morning."
 ]
 
@@ -56,14 +56,15 @@ def start_game():
             print("Yes! You got it!!")
         else:
             print(" You wrong:( ")
+            print ("The correct answer was:", correct_word)
+
    #         print(" The correct answer was", words)
 
 # ask the user want another sentences or not
-more = input (" Do you want another sentences? (yes/no)").lower().strip()
-if more != "yes":
-    print(" Thank you for playing.")
- #   break
-
+        more = input (" Do you want another sentences? (yes/no)").lower().strip()
+        if more != "yes":
+            print(" Thank you for playing.")
+            break 
 start_game()
 
 
