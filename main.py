@@ -40,7 +40,7 @@ sentence_word = {
     sentences[10]:"routine"
 }
 
-#use def 
+#use def to play game
 def start_game():
     while True:
         sentence = random.choice(sentences)
